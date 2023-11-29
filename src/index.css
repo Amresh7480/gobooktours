@@ -1,13 +1,500 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+html{
+  font-family: 'Work Sans', sans-serif;
+}
+/* --------------Header Css--------------- */
+
+header .navbar .nav-item {
+ padding: 12px 20px;
+}
+header .navbar .nav-item a {
+  color: #5c1c4b;
+  font-family: 'Work Sans', sans-serif;
+
+}
+header .navbar-toggler{
+border: none !important;
+}
+header .navbar-toggler:focus{
+  box-shadow: none !important;
+}
+header .navbar-nav{
+  position: relative;
+}
+.destinations-mega-menu{
+  width: 1070px;
+  padding: 20px;
+  border: #000 1px solid;
+  position: absolute;
+  right: -13%;
+  top: 100%;
+  border-radius: 6px;
+  background: white;
+  display: none;
+  z-index: 999;
+  
+}
+header .destinations-mega-menu li{
+  padding-top: 7px;
+  list-style: none;
+  color: #5c1c4b;
+}
+.destinations-nav:hover .destinations-mega-menu{
+  display: block;
+}
+.countries-menu-items{
+  position: relative;
+}
+.countries-mega-menu{
+  width: 270px;
+  padding: 20px;
+  border: #000 1px solid;
+  position: absolute;
+  left: -4%;
+  top: 100%;
+  border-radius: 6px;
+  background: white;
+  display: none;
+  z-index: 9999;
+}
+header .countries-mega-menu li{
+  padding: 5px 0px 10px 0px ;
+  list-style: none;
+  color: #5c1c4b;
+  border-bottom: 1px solid #5c1c4b;
+}
+.countries-menu-items:hover .countries-mega-menu{
+  display: block;
+}
+/* --------------------outher Header----------------- */
+.outher_header{
+  position:sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+.outher_header .header_Search_main{
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outher_header .header_Search_main input{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0px 15px;
+}
+.outher_header .header_Search_main input::placeholder{
+color: #000;
+font-weight: 500;
+}
+.outher_header .header_Search_main button{
+  width: 15%;
+  height: 50px;
+  background-color: #5c1c4b;
+  border: none;
+}
+.outher_header .header_Search_main button:hover{
+  background-color: #20371e;
+}
+
+.outher_header .drop{
+  padding: 24px 20px;
+  color: #5c1c4b;
+  cursor: pointer;
+}
+.outher_header .drop a{
+  color: #5c1c4b;
+  cursor: pointer;
+}
+.header_Search_main{
+  max-width: 400px;
+}
+.header_Search_main input{
+  width: 100%;
+}
+.drop:hover .destinations-mega-menu{
+  display: block !important;
+}
+.drop:hover .countries-mega-menu{
+  display: block !important;
+}
+/* ----------------footer css-------------- */
+.footer{
+  background: #000;
+}
+.footer .footer-menu-heading{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* ----------------Home css---------------- */
+.search-bainer{
+  background: url('images/india-holidays.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 500px;
+}
+.right-bainer{
+  background: url('images/india-nepal-bhutan-tour.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 500px;
+}
+.right-bainer h1{
+  font-size: 40px;
+}
+.search input{
+  width: 58%;
+  height: 50px;
+  outline: none;
+  padding: 0px 15px;
+}
+.search input::placeholder{
+color: #000;
+font-weight: 500;
+}
+.search button{
+  width: 10%;
+  height: 50px;
+  background-color: #5c1c4b;
+  border: none;
+}
+.search button:hover{
+  background-color: #20371e;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+.overlay-containt .tagg-bt2{
+  padding: 5px 10px;
+    background-color: #f7f5ed;
+    color: #000000;
+    border-radius: 10px;
+}
+.bainer-bottom{
+  padding: 20px 0px;
+}
+.bainer-bottom div:nth-child(1){
+  padding: 20px;
+}
+  /* -------------------- in Home Top Trending India Holiday------------------ */
+  .top-trending{
+    padding: 0px 0px 60px 0px;
+  }
+  .rajsthan{
+    width: 100%;
+    height: 500px;
+    /* background: url(images/rajasthan-tour-packages.jpg) no-repeat center; */
+    background-size: cover;
+    border-radius: 15px;
+  }
+  .trans{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: end;
+    
+  }
+  .bg-frem{
+    width: 100%;
+    height: 250px;
+    /* background: url(images/kerala-tour-packages.jpg) no-repeat center; */
+    background-size: cover;
+    border-radius: 15px;
+  }
+  .trans2{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82),transparent);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: end;
+    
+  }
+  /* -------------------- in Home Top Trending International Holiday------------------ */
+  .top-trending-inte .bg-frem{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-radius: 15px;
+  }
+      /* --------------------Top Picks Section ------------------ */
+.top-picks{
+  background: #efeeee;
+  padding: 30px 0px 60px 0px;
+}
+.top-picks .card{
+  border: none;
+}
+.top-picks .card-body p{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.top-picks .card-body-inner button{
+  background: #5c1c4b;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.top-picks .section-title{
+  padding-bottom: 20px;
+}
+   /* -------------------Our Best Sellers--------------- */
+
+.best-sells{
+  padding: 30px 0px 80px 0px;
+  
+}
+.best-sells .trans{
+  background: linear-gradient(360deg, black, transparent);
+  position: relative;
+}
+.best-sells .section-title{
+  margin-bottom: 20px;
+}
+.best-sells .trans button{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+   /* -------------------our reviews--------------- */
+
+.our-reviews{
+background-color: #878587;
+}
+.our-reviews p{
+  font-size: 22px;
+}
+      /* -----------------our latest blog ---------------- */
+.letest-blog{
+ background: #faf9f9;
+
+}
+/* ---------------.faq-section---------------- */
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: #5c1c4b;
+  color: white;
+  font-size: 20px;
+}
+.faq-section .accordion-button{
+  margin-top: 20px;
+  border: #dee2e6 1px solid;
+  font-size: 20px;
+}
+
+.faq-section .accordion-button:focus{
+ border: #dee2e6 1px solid;
+ box-shadow: none;
+}
+.faq-section .accordion-body {
+ border: #dee2e6 1px solid;
+
+}
+.faq-section .accordion-item{
+  border: none !important;
+}
+.bottom-search input{
+  width: 43%;
+  height: 48px;
+  border: #dee2e6 1px solid;
+  border-radius: 8px; 
+   outline-color: #86b7fe; 
+}
+/* ---------------slick slider----------- */
+.slick-prev{
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  color: white !important;
+  background: #198754 !important;
+  left: 0 !important;
+  border: 2px solid white !important;
+  z-index: 999;
+}
+.slick-next{
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  color: white !important;
+  background: #198754 !important;
+  right: 0 !important;
+  border: 2px solid white !important;
+  z-index: 999;
+}
+.slick-prev:before{
+  opacity: 1 !important;
+}
+.slick-next:before {
+  opacity: 1 !important;
+}
+.slick-dots{
+  bottom: -40px !important;
+}
+/* --------------------About Page Css------------------- */
+.page-headline{
+  max-width: 800px !important;
+  padding: 40px 0px;
+}
+.about-faq{
+ padding: 30px 0px 60px 0px; 
+}
+.about-faq .accordion-button:not(.collapsed) {
+  background-color: #5c1c4b;
+  color: white;
+  font-size: 20px;
+}
+.about-faq .accordion-button{
+  margin-top: 20px;
+  border: #dee2e6 1px solid;
+  font-size: 20px;
+}
+
+.about-faq .accordion-button:focus{
+ border: #dee2e6 1px solid;
+ box-shadow: none;
+}
+.about-faq .accordion-body {
+ border: #dee2e6 1px solid;
+
+}
+.about-faq .accordion-item{
+  border: none !important;
+}
+/* ----------------Blog Css------------- */
+.blog-main{
+  background-color: #efeeee;
+}
+.main-section{
+padding: 30px 0px 60px 0px;
+}
+/* ------------------------BlogCard Css---------------- */
+.listin-meta{
+  font-size: 90%;
+  color: #adb5bd;
+}
+.blog_ridMore_btn{
+  background-color: #5c1c4b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.3s;
+}
+.blog_ridMore_btn:hover{
+  background-color: #20371e !important;
+}
+/* --------------------Contact Css---------------- */
+.page-header{
+  padding: 40px 0px;
+  color: #000;
+}
+.form_control{
+  width: 100%;
+  min-height: 50px;
+    padding-left: 20px;
+    background: #f8f9fa;
+    font-weight: 500;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 7px;
+    line-height: 1.5;
+    appearance: none;
+    background-clip: padding-box;
+    outline-color: #5c1c4b;
+}
+/* -------------------------Rajsthan Packag page ------------------- */
+.discount_btn{
+  font-size: 12px;
+}
+.price{
+  font-size: 18px;
+}
+.PackagesCard .blog_ridMore_btn {
+    padding: 6px 14px !important;
+    font-size: 14px;
+}
+@media only screen and (min-width:200px) and (max-width:991px){
+  .destinations-mega-menu{
+    width: 100%;
+    left: 0;
+    top: 50%;
+  }
+  .outher_header{
+    position: relative;
+    padding: 24px 10px;
+    position: sticky;
+    top: 0;
+  }
+  .baar_icon{
+    position: absolute;
+    right: 15px;
+
+  }
+  .outher_header ul{
+    height: 100vh;
+    width: 80%;
+    z-index: 9999;
+    position: absolute;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: start;
+    left: -100%;
+    top: 101%;
+    background-color: white;
+    transition-duration: 0.4s;
+  }
+  .baar_icon{
+    color: #5c1c4b;
+  }
+  .showMenu{
+    left: 0 !important;
+  }
+  .outher_header .drop{
+    padding: 10px 15px;
+  }
+  .bottom-search input{
+    width: 100%;
+  }
+  .bottom-search{
+    flex-direction: column !important;
+    justify-content: left !important;
+  }
+  .slick-slider {
+    padding: 0px !important;
+  }
+  .offcanvas{
+    width: 80% !important;
+  }
+  .page-headline{
+    padding: 15px 0px;
+  }
+  .about-faq{
+    padding: 0px 0px 30px 0px; 
+   }
+ 
+}
+@media only screen and (min-width:991px) and (max-width:1199px){
+  .outher_header .header_Search_main{
+    display: none !important;
+  }
+  .destinations-mega-menu{
+    width: 900px;
+    right: -7%;
+  }
 }
